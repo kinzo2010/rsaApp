@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">RSA encryption</string>
+    <string name="home_page">Trang chủ</string>
+    <string name="add_new">Thêm mới</string>
+    <string name="content">Nội dung</string>
+    <string name="title">Tiêu đề</string>
+    <string name="save">Lưu</string>
+    <string name="open_text_file">Mở file text</string>
+    <string name="choose_encryption_level">Chọn cấp độ mã hóa</string>
+    <string name="encryption_level_1">Cấp độ I</string>
+    <string name="encryption_level_2">Cấp độ II</string>
+    <string name="encryption_level_3">Cấp độ III</string>
+    <string name="encrypting">Đang mã hóa ...</string>
+    <string name="encrypt">Mã hóa</string>
+    <string name="decrypt">Giải mã</string>
+    <string name="delete">Xóa</string>
+    <string name="decrypting">Đang giải mã ...</string>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="itemViewModel"
+            type="com.text.encryption.rsa.rsaencryption.viewmodels.MainDataItemViewModel"/>
+
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_main_data_item"
+        android:layout_marginBottom="8dp"
+        android:onClick="@{itemViewModel::onClickItem}">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="36dp"
+            android:layout_alignParentStart="true">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/roboto"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:gravity="start"
+                android:text="@{itemViewModel.title}"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/grayDark"
+                android:fontFamily="@font/roboto"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="end"
+                android:text="@{itemViewModel.date}"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/background_arrow_right_circle"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="6dp"
+            android:src="@drawable/icon_arrow_right"
+            android:padding="4dp" />
+
+    </RelativeLayout>
+
+</layout>
